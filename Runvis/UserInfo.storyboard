@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4t4-BU-mgU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4a1-qF-anK">
+            <objects>
+                <navigationController storyboardIdentifier="userInfoNavigation" automaticallyAdjustsScrollViewInsets="NO" id="4t4-BU-mgU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="personAct" selectedImage="personAct" id="3Bw-1T-Rdb">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GCj-O5-eFm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ENX-V0-g2B" kind="relationship" relationship="rootViewController" id="zi8-Ln-gv6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGQ-EF-lYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="-6"/>
+        </scene>
+        <!--健康管理-->
+        <scene sceneID="JJ1-H2-08b">
+            <objects>
+                <viewController storyboardIdentifier="userInfo" id="ENX-V0-g2B" customClass="UserInfoViewController" customModule="Runvis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xcr-Te-i2f"/>
+                        <viewControllerLayoutGuide type="bottom" id="bJY-UQ-i3y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CiH-cR-Wia">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9d3-xU-uEr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.80784313725490198" green="0.84705882352941175" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9d3-xU-uEr" firstAttribute="bottom" secondItem="bJY-UQ-i3y" secondAttribute="top" id="7Xf-YE-xuf"/>
+                            <constraint firstItem="9d3-xU-uEr" firstAttribute="top" secondItem="CiH-cR-Wia" secondAttribute="top" id="Fxo-JB-cHp"/>
+                            <constraint firstItem="9d3-xU-uEr" firstAttribute="leading" secondItem="CiH-cR-Wia" secondAttribute="leading" id="Jhy-Vf-opz"/>
+                            <constraint firstAttribute="trailing" secondItem="9d3-xU-uEr" secondAttribute="trailing" id="v1O-S1-TnC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="健康管理" id="Rzm-hq-FLJ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="afb-PT-hml"/>
+                        <barButtonItem key="rightBarButtonItem" title="編輯" id="OoX-F3-Yri">
+                            <connections>
+                                <action selector="goToDetailUserInfoVC:" destination="ENX-V0-g2B" id="INZ-Uj-qyb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="userInfoTavleView" destination="9d3-xU-uEr" id="IEa-OK-vRR"/>
+                        <segue destination="yEg-2I-Ifj" kind="show" identifier="toEachRunningRecordVC" id="N7x-2o-uIr"/>
+                        <segue destination="3Ur-ln-qQX" kind="show" identifier="toDetailUserInfoVC" id="rRA-fc-1zE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZx-86-Ezr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="-7.6461769115442282"/>
+        </scene>
+        <!--EachRunningRecord-->
+        <scene sceneID="LTU-QZ-z2Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EachRunningRecord" id="yEg-2I-Ifj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dm1-bG-57i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="-7"/>
+        </scene>
+        <!--DetailUserInfo-->
+        <scene sceneID="2Us-fG-KR6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailUserInfo" id="3Ur-ln-qQX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QrY-ax-ehX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZc-UW-VPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="699"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="personAct" width="31" height="26"/>
+    </resources>
+</document>

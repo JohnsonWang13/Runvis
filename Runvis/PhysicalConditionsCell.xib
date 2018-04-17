@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="physicalConditionsCell" rowHeight="144" id="KGk-i7-Jjw" customClass="PhysicalConditionsCell" customModule="Runvis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="差" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgn-jB-TfC">
+                        <rect key="frame" x="46.5" y="58" width="14" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFq-lv-hZx">
+                        <rect key="frame" x="132.5" y="58" width="26.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="良好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgA-Pp-Mu3">
+                        <rect key="frame" x="224.5" y="58" width="26.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="很棒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qiz-ty-wB0">
+                        <rect key="frame" x="316.5" y="58" width="26.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWH-ga-8VH" userLabel="普通">
+                        <rect key="frame" x="128" y="16" width="35" height="35"/>
+                        <state key="normal" title="普通" image="notBadFace"/>
+                        <state key="selected" image="notBadYellowFace"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2e-GT-vhF" userLabel="良好">
+                        <rect key="frame" x="220" y="16" width="35" height="35"/>
+                        <state key="normal" title="良好" image="smileFace"/>
+                        <state key="selected" image="smileYellowFace"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imm-hD-Djo" userLabel="很棒">
+                        <rect key="frame" x="312" y="16" width="35" height="35"/>
+                        <state key="normal" title="很棒" image="happyFace"/>
+                        <state key="selected" image="happyYellowFace"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYj-j0-6aS" userLabel="差">
+                        <rect key="frame" x="36" y="16" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FYj-j0-6aS" secondAttribute="height" id="itZ-ns-dfl"/>
+                        </constraints>
+                        <state key="normal" title="差" image="badFace"/>
+                        <state key="selected" image="badYellowFace"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="FYj-j0-6aS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" multiplier="53.5:375" id="3X6-SU-cdE"/>
+                    <constraint firstItem="y2e-GT-vhF" firstAttribute="width" secondItem="FYj-j0-6aS" secondAttribute="width" id="5MK-fX-LcM"/>
+                    <constraint firstItem="y2e-GT-vhF" firstAttribute="centerY" secondItem="FYj-j0-6aS" secondAttribute="centerY" id="5bY-kc-vea"/>
+                    <constraint firstItem="Tgn-jB-TfC" firstAttribute="centerX" secondItem="FYj-j0-6aS" secondAttribute="centerX" id="AfM-jy-MmN"/>
+                    <constraint firstItem="y2e-GT-vhF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" multiplier="237.5:375" id="Bsb-8l-FVv"/>
+                    <constraint firstItem="lgA-Pp-Mu3" firstAttribute="centerY" secondItem="zFq-lv-hZx" secondAttribute="centerY" id="HbY-RQ-aFz"/>
+                    <constraint firstItem="gWH-ga-8VH" firstAttribute="height" secondItem="FYj-j0-6aS" secondAttribute="height" id="IGM-R0-Ocf"/>
+                    <constraint firstItem="FYj-j0-6aS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="bottom" multiplier="33.5:89" id="IIL-mF-UJL"/>
+                    <constraint firstItem="lgA-Pp-Mu3" firstAttribute="centerX" secondItem="y2e-GT-vhF" secondAttribute="centerX" id="N6s-g7-Pa4"/>
+                    <constraint firstItem="imm-hD-Djo" firstAttribute="width" secondItem="FYj-j0-6aS" secondAttribute="width" id="OrZ-Qa-4pa"/>
+                    <constraint firstItem="Tgn-jB-TfC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="bottom" multiplier="67:89" id="QTh-pq-Hv1"/>
+                    <constraint firstItem="imm-hD-Djo" firstAttribute="height" secondItem="FYj-j0-6aS" secondAttribute="height" id="St5-dK-p17"/>
+                    <constraint firstItem="Qiz-ty-wB0" firstAttribute="centerX" secondItem="imm-hD-Djo" secondAttribute="centerX" id="XHE-oJ-F4z"/>
+                    <constraint firstItem="gWH-ga-8VH" firstAttribute="width" secondItem="FYj-j0-6aS" secondAttribute="width" id="Zvg-FF-heW"/>
+                    <constraint firstItem="Qiz-ty-wB0" firstAttribute="centerY" secondItem="lgA-Pp-Mu3" secondAttribute="centerY" id="aw0-zZ-JGc"/>
+                    <constraint firstItem="FYj-j0-6aS" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="35:375" id="bJh-FH-OUG"/>
+                    <constraint firstItem="y2e-GT-vhF" firstAttribute="height" secondItem="FYj-j0-6aS" secondAttribute="height" id="f68-0j-aA0"/>
+                    <constraint firstItem="zFq-lv-hZx" firstAttribute="centerX" secondItem="gWH-ga-8VH" secondAttribute="centerX" id="oqa-Ob-OZX"/>
+                    <constraint firstItem="imm-hD-Djo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" multiplier="329.5:375" id="pAI-EV-qId"/>
+                    <constraint firstItem="gWH-ga-8VH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" multiplier="145.5:375" id="r8W-Cl-u4W"/>
+                    <constraint firstItem="imm-hD-Djo" firstAttribute="centerY" secondItem="FYj-j0-6aS" secondAttribute="centerY" id="rqa-qk-jDU"/>
+                    <constraint firstItem="zFq-lv-hZx" firstAttribute="centerY" secondItem="Tgn-jB-TfC" secondAttribute="centerY" id="vTb-wN-O1z"/>
+                    <constraint firstItem="gWH-ga-8VH" firstAttribute="centerY" secondItem="FYj-j0-6aS" secondAttribute="centerY" id="wtL-JV-zIR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="badFaceBotton" destination="FYj-j0-6aS" id="aLD-rf-l8s"/>
+                <outlet property="greatButton" destination="imm-hD-Djo" id="1GS-vh-Y8E"/>
+                <outlet property="normalButton" destination="gWH-ga-8VH" id="dtc-qY-qwj"/>
+                <outlet property="smileButton" destination="y2e-GT-vhF" id="ClP-Si-zhb"/>
+            </connections>
+            <point key="canvasLocation" x="-126" y="-77"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="badFace" width="37" height="37"/>
+        <image name="badYellowFace" width="37" height="37"/>
+        <image name="happyFace" width="37" height="37"/>
+        <image name="happyYellowFace" width="37" height="37"/>
+        <image name="notBadFace" width="37" height="37"/>
+        <image name="notBadYellowFace" width="37" height="37"/>
+        <image name="smileFace" width="37" height="37"/>
+        <image name="smileYellowFace" width="37" height="37"/>
+    </resources>
+</document>

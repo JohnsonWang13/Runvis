@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Univers LT 47 Condensed Light.ttf">
+            <string>UniversLT-CondensedLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userInfoCell" rowHeight="411" id="KGk-i7-Jjw" customClass="UserInfoCell" customModule="Runvis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="324.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0of-gV-jsN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWk-7N-nGb">
+                                <rect key="frame" x="0.0" y="215" width="375" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活動歷程" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVR-Gj-61k">
+                                        <rect key="frame" x="161.5" y="9.5" width="52.5" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                        <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80784313725490198" green="0.84705882352941175" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="oVR-Gj-61k" firstAttribute="centerY" secondItem="wWk-7N-nGb" secondAttribute="centerY" id="ALq-7F-rp8"/>
+                                    <constraint firstItem="oVR-Gj-61k" firstAttribute="centerX" secondItem="wWk-7N-nGb" secondAttribute="centerX" id="JJe-kI-pXl"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VeU-12-0VG">
+                                <rect key="frame" x="144" y="12.5" width="87" height="87"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.25882352941176467" blue="0.55294117647058827" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VeU-12-0VG" secondAttribute="height" id="wxe-zn-w9t"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="體重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3n-ih-Jhd">
+                                <rect key="frame" x="50" y="152.5" width="26.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqe-k3-89j">
+                                <rect key="frame" x="174" y="152.5" width="26.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoT-MJ-eoN">
+                                <rect key="frame" x="55" y="171" width="16" height="34"/>
+                                <fontDescription key="fontDescription" name="UniversLT-CondensedLight" family="Univers LT 47 CondensedLt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gv-dS-HuY">
+                                <rect key="frame" x="301.5" y="152.5" width="23.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總距離" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghN-Sl-945">
+                                <rect key="frame" x="43.5" y="264.5" width="39.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF4-aT-e3Y">
+                                <rect key="frame" x="42" y="283" width="42" height="34"/>
+                                <fontDescription key="fontDescription" name="UniversLT-CondensedLight" family="Univers LT 47 CondensedLt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwk-GX-yFC">
+                                <rect key="frame" x="181.5" y="283" width="12.5" height="34"/>
+                                <fontDescription key="fontDescription" name="UniversLT-CondensedLight" family="Univers LT 47 CondensedLt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總次數" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qke-4g-mrf">
+                                <rect key="frame" x="167" y="264.5" width="39.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平均配速" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr6-zP-QUa">
+                                <rect key="frame" x="287" y="264.5" width="52.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QX-5A-iZG">
+                                <rect key="frame" x="162.5" y="99.5" width="51" height="28"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pi-bi-hnB">
+                                <rect key="frame" x="179.5" y="171" width="16" height="34"/>
+                                <fontDescription key="fontDescription" name="UniversLT-CondensedLight" family="Univers LT 47 CondensedLt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-oQ-qS5">
+                                <rect key="frame" x="305" y="171" width="16" height="34"/>
+                                <fontDescription key="fontDescription" name="UniversLT-CondensedLight" family="Univers LT 47 CondensedLt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0'00''" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mil-Rf-Tim">
+                                <rect key="frame" x="286.5" y="283" width="54" height="34"/>
+                                <fontDescription key="fontDescription" name="UniversLT-CondensedLight" family="Univers LT 47 CondensedLt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wWk-7N-nGb" secondAttribute="trailing" id="0mw-Ku-vAC"/>
+                            <constraint firstItem="WF4-aT-e3Y" firstAttribute="top" secondItem="ghN-Sl-945" secondAttribute="bottom" id="2dB-Xp-Y6X"/>
+                            <constraint firstItem="mil-Rf-Tim" firstAttribute="centerY" secondItem="zwk-GX-yFC" secondAttribute="centerY" id="43J-Z5-TbR"/>
+                            <constraint firstItem="wbo-oQ-qS5" firstAttribute="top" secondItem="4gv-dS-HuY" secondAttribute="bottom" id="5g8-lU-dgp"/>
+                            <constraint firstItem="Oqe-k3-89j" firstAttribute="centerX" secondItem="7pi-bi-hnB" secondAttribute="centerX" id="6Q6-Xp-0vC"/>
+                            <constraint firstItem="HoT-MJ-eoN" firstAttribute="centerX" secondItem="0of-gV-jsN" secondAttribute="trailing" multiplier="63:375" id="8Po-wI-ak5"/>
+                            <constraint firstItem="zwk-GX-yFC" firstAttribute="centerX" secondItem="7pi-bi-hnB" secondAttribute="centerX" id="8io-tT-VXc"/>
+                            <constraint firstItem="mil-Rf-Tim" firstAttribute="centerX" secondItem="wbo-oQ-qS5" secondAttribute="centerX" id="8rJ-pw-NV3"/>
+                            <constraint firstItem="7pi-bi-hnB" firstAttribute="centerY" secondItem="HoT-MJ-eoN" secondAttribute="centerY" id="DNm-2A-Z0T"/>
+                            <constraint firstItem="4gv-dS-HuY" firstAttribute="centerX" secondItem="wbo-oQ-qS5" secondAttribute="centerX" id="Dnb-tf-Rc1"/>
+                            <constraint firstItem="ghN-Sl-945" firstAttribute="centerX" secondItem="WF4-aT-e3Y" secondAttribute="centerX" id="E2x-5K-UdY"/>
+                            <constraint firstItem="wbo-oQ-qS5" firstAttribute="centerX" secondItem="0of-gV-jsN" secondAttribute="trailing" multiplier="313:375" id="EG9-0z-NOc"/>
+                            <constraint firstItem="VeU-12-0VG" firstAttribute="centerX" secondItem="0of-gV-jsN" secondAttribute="centerX" id="I0Q-xX-z7P"/>
+                            <constraint firstItem="WF4-aT-e3Y" firstAttribute="centerY" secondItem="0of-gV-jsN" secondAttribute="bottom" multiplier="300:325" id="IhH-N4-3DR"/>
+                            <constraint firstItem="7pi-bi-hnB" firstAttribute="top" secondItem="Oqe-k3-89j" secondAttribute="bottom" id="KCG-H6-wMK"/>
+                            <constraint firstItem="zwk-GX-yFC" firstAttribute="centerY" secondItem="WF4-aT-e3Y" secondAttribute="centerY" id="L1C-Om-TmL"/>
+                            <constraint firstItem="J3n-ih-Jhd" firstAttribute="centerX" secondItem="HoT-MJ-eoN" secondAttribute="centerX" id="QiH-pM-FS6"/>
+                            <constraint firstItem="wWk-7N-nGb" firstAttribute="leading" secondItem="0of-gV-jsN" secondAttribute="leading" id="R66-SX-9By"/>
+                            <constraint firstItem="qke-4g-mrf" firstAttribute="centerX" secondItem="zwk-GX-yFC" secondAttribute="centerX" id="X8e-io-cdK"/>
+                            <constraint firstItem="6QX-5A-iZG" firstAttribute="centerX" secondItem="VeU-12-0VG" secondAttribute="centerX" id="a0V-1u-qGp"/>
+                            <constraint firstItem="zwk-GX-yFC" firstAttribute="top" secondItem="qke-4g-mrf" secondAttribute="bottom" id="gS7-1L-qDI"/>
+                            <constraint firstItem="HoT-MJ-eoN" firstAttribute="top" secondItem="J3n-ih-Jhd" secondAttribute="bottom" id="gfd-0x-a0x"/>
+                            <constraint firstItem="wWk-7N-nGb" firstAttribute="centerY" secondItem="0of-gV-jsN" secondAttribute="bottom" multiplier="233:325" id="h6m-vv-6fa"/>
+                            <constraint firstItem="HoT-MJ-eoN" firstAttribute="centerY" secondItem="0of-gV-jsN" secondAttribute="bottom" multiplier="188:325" id="hGF-vS-7hy"/>
+                            <constraint firstItem="wWk-7N-nGb" firstAttribute="height" secondItem="0of-gV-jsN" secondAttribute="height" multiplier="36:325" id="iRb-rS-4Pc"/>
+                            <constraint firstItem="WF4-aT-e3Y" firstAttribute="centerX" secondItem="HoT-MJ-eoN" secondAttribute="centerX" id="iVV-CS-7JQ"/>
+                            <constraint firstItem="VeU-12-0VG" firstAttribute="width" secondItem="0of-gV-jsN" secondAttribute="width" multiplier="87:375" id="jVc-kG-0RN"/>
+                            <constraint firstItem="Pr6-zP-QUa" firstAttribute="centerX" secondItem="mil-Rf-Tim" secondAttribute="centerX" id="mAB-lG-nx1"/>
+                            <constraint firstItem="VeU-12-0VG" firstAttribute="centerY" secondItem="0of-gV-jsN" secondAttribute="bottom" multiplier="56:325" id="mTb-b4-Gjh"/>
+                            <constraint firstItem="7pi-bi-hnB" firstAttribute="centerX" secondItem="0of-gV-jsN" secondAttribute="centerX" id="rGn-kZ-COt"/>
+                            <constraint firstItem="6QX-5A-iZG" firstAttribute="top" secondItem="VeU-12-0VG" secondAttribute="bottom" id="vfq-n8-HdR"/>
+                            <constraint firstItem="mil-Rf-Tim" firstAttribute="top" secondItem="Pr6-zP-QUa" secondAttribute="bottom" id="wvc-Pk-Ntw"/>
+                            <constraint firstItem="wbo-oQ-qS5" firstAttribute="centerY" secondItem="HoT-MJ-eoN" secondAttribute="centerY" id="yKP-Bj-O7R"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0of-gV-jsN" secondAttribute="trailing" id="Ra2-E3-rZK"/>
+                    <constraint firstItem="0of-gV-jsN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YRx-Qk-uGi"/>
+                    <constraint firstAttribute="bottom" secondItem="0of-gV-jsN" secondAttribute="bottom" id="b3d-KV-abs"/>
+                    <constraint firstItem="0of-gV-jsN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qWF-e3-AHF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="activityRecord" destination="oVR-Gj-61k" id="3VR-OL-YWa"/>
+                <outlet property="activityRecordBackGroundColorView" destination="wWk-7N-nGb" id="NEe-qz-0ge"/>
+                <outlet property="averageSpeedValueLabel" destination="mil-Rf-Tim" id="oQD-Wt-h2C"/>
+                <outlet property="bMIValueLabel" destination="wbo-oQ-qS5" id="wPN-XF-MOQ"/>
+                <outlet property="backGroundView" destination="0of-gV-jsN" id="xdu-Lk-h0V"/>
+                <outlet property="heightValueLabel" destination="7pi-bi-hnB" id="tTf-VJ-QG7"/>
+                <outlet property="nameLabel" destination="6QX-5A-iZG" id="TAW-dI-zCN"/>
+                <outlet property="profilePhoto" destination="VeU-12-0VG" id="uFT-ZD-URP"/>
+                <outlet property="totalDistanceValueLabel" destination="WF4-aT-e3Y" id="CkV-jy-Ejv"/>
+                <outlet property="totalTimesLabel" destination="zwk-GX-yFC" id="0BK-Y2-KvW"/>
+                <outlet property="weightValueLabel" destination="HoT-MJ-eoN" id="WkO-0r-sTQ"/>
+            </connections>
+            <point key="canvasLocation" x="-128" y="56"/>
+        </tableViewCell>
+    </objects>
+</document>

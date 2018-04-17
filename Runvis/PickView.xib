@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailUserInfoViewController" customModule="Runvis" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PickerView" id="iN0-l3-epB" customClass="PickView" customModule="Runvis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcC-nz-hPN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aww-Dc-6qR">
+                            <rect key="frame" x="20" y="4" width="34" height="36"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                            <state key="normal" title="取消"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性別" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-5k-vHM">
+                            <rect key="frame" x="171" y="10.5" width="34" height="24"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUO-UX-9Mu">
+                            <rect key="frame" x="321" y="4" width="34" height="36"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                            <state key="normal" title="完成"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8784313725490196" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ujd-5k-vHM" firstAttribute="centerY" secondItem="PcC-nz-hPN" secondAttribute="centerY" id="3bj-rU-i4y"/>
+                        <constraint firstItem="Aww-Dc-6qR" firstAttribute="leading" secondItem="PcC-nz-hPN" secondAttribute="leading" constant="20" symbolic="YES" id="6kZ-wm-yNb"/>
+                        <constraint firstItem="Ujd-5k-vHM" firstAttribute="centerX" secondItem="PcC-nz-hPN" secondAttribute="centerX" id="9HH-HJ-GOC"/>
+                        <constraint firstAttribute="trailing" secondItem="RUO-UX-9Mu" secondAttribute="trailing" constant="20" symbolic="YES" id="SiZ-uY-DYR"/>
+                        <constraint firstItem="Aww-Dc-6qR" firstAttribute="centerY" secondItem="PcC-nz-hPN" secondAttribute="centerY" id="b14-Dh-2vh"/>
+                        <constraint firstItem="RUO-UX-9Mu" firstAttribute="centerY" secondItem="PcC-nz-hPN" secondAttribute="centerY" id="kWp-N3-I4i"/>
+                    </constraints>
+                </view>
+                <pickerView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYP-yg-3ys">
+                    <rect key="frame" x="0.0" y="44" width="375" height="215"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PcC-nz-hPN" secondAttribute="trailing" id="BBm-2I-DYD"/>
+                <constraint firstItem="uYP-yg-3ys" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GeS-Ez-BcV"/>
+                <constraint firstAttribute="bottom" secondItem="uYP-yg-3ys" secondAttribute="bottom" id="LcB-ZS-h7K"/>
+                <constraint firstItem="uYP-yg-3ys" firstAttribute="top" secondItem="PcC-nz-hPN" secondAttribute="bottom" id="WKp-fq-Vbe"/>
+                <constraint firstItem="PcC-nz-hPN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gGt-tf-mpS"/>
+                <constraint firstItem="PcC-nz-hPN" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="44:259" id="jm4-2g-wlX"/>
+                <constraint firstAttribute="trailing" secondItem="uYP-yg-3ys" secondAttribute="trailing" id="wTw-yE-PWZ"/>
+                <constraint firstItem="PcC-nz-hPN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yc0-No-8qk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="Aww-Dc-6qR" id="rfa-xl-4vf"/>
+                <outlet property="finishButton" destination="RUO-UX-9Mu" id="Fl6-aT-V2A"/>
+                <outlet property="pickView" destination="uYP-yg-3ys" id="sQm-4S-cTi"/>
+            </connections>
+            <point key="canvasLocation" x="660" y="52"/>
+        </view>
+    </objects>
+</document>

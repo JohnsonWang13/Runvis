@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WuR-p3-mmP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--監測站點-->
+        <scene sceneID="NUx-KR-3KY">
+            <objects>
+                <viewController id="WuR-p3-mmP" customClass="CityAndDistrictViewController" customModule="Runvis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BtN-eo-NYo"/>
+                        <viewControllerLayoutGuide type="bottom" id="RBI-qM-DsR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yWN-vb-Z8E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-Zm-Ux6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cityAndDistrictCell" id="Gpu-HH-p8Y">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gpu-HH-p8Y" id="owh-pf-RZM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="AJm-h1-XCg">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ysi-Zm-Ux6" secondAttribute="bottom" id="BVr-Ai-dEm"/>
+                            <constraint firstItem="AJm-h1-XCg" firstAttribute="centerY" secondItem="yWN-vb-Z8E" secondAttribute="centerY" id="KQD-vZ-XlM"/>
+                            <constraint firstItem="AJm-h1-XCg" firstAttribute="centerX" secondItem="yWN-vb-Z8E" secondAttribute="centerX" id="RGZ-1A-2p2"/>
+                            <constraint firstItem="Ysi-Zm-Ux6" firstAttribute="leading" secondItem="yWN-vb-Z8E" secondAttribute="leading" id="afi-PB-vnQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ysi-Zm-Ux6" secondAttribute="trailing" id="tMP-hT-Jdy"/>
+                            <constraint firstItem="Ysi-Zm-Ux6" firstAttribute="top" secondItem="yWN-vb-Z8E" secondAttribute="top" id="uY8-Mb-UMh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="監測站點" id="Cjd-C7-vyi">
+                        <barButtonItem key="backBarButtonItem" title="  " id="UyX-xs-kpO"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="AJm-h1-XCg" id="xEV-er-vPs"/>
+                        <outlet property="tableView" destination="Ysi-Zm-Ux6" id="Ozu-Xr-Ekx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7U-PS-A1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2559" y="495"/>
+        </scene>
+    </scenes>
+</document>
